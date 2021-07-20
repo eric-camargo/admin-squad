@@ -26,7 +26,7 @@ const MainNavigation = () => {
             <NavLink to='/promotores' activeClassName={classes.activeLink} className={classes.link}>Promotores</NavLink>
             </li>}
           {isLoggedIn && <li>
-            <NavLink to='/leads' activeClassName={classes.activeLink} className={classes.link}>Indicações</NavLink>
+            <NavLink to='/indicacoes' activeClassName={classes.activeLink} className={classes.link}>Indicações</NavLink>
             </li>}
           {isLoggedIn && <li>
             <NavLink to='/perfil' activeClassName={classes.activeLink} className={classes.link}>Perfil</NavLink>

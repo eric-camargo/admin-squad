@@ -5,7 +5,8 @@ import Layout from './components/Layout/Layout';
 import UserProfile from './components/Profile/UserProfile';
 import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
-import Promoters from './pages/Promoters'
+import Promoters from './pages/Promoters';
+import Leads from './pages/Leads';
 import AuthContext from './store/auth-context';
 
 function App() {
@@ -29,8 +30,12 @@ function App() {
             <UserProfile />
           </Route>}
         {isLoggedIn &&
-        <Route path='/corretores'>
+        <Route path='/promotores'>
           <Promoters />
+        </Route>}
+        {isLoggedIn &&
+        <Route path='/indicacoes'>
+          <Leads />
         </Route>}
       </Switch>
     </Layout>

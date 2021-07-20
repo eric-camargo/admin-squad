@@ -5,7 +5,7 @@
 .card {
   width: 80%;
   height: calc(90vh - 65px);
-  background-color: beige;
+  background-color: rgb(231, 251, 255);
   border-radius: 14px;
   padding: 24px;
 }
