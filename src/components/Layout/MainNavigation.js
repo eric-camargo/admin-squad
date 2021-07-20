@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import AuthContext from '../../store/auth-context';
 
 import classes from './MainNavigation.module.css';
@@ -17,10 +17,19 @@ const MainNavigation = () => {
       <nav>
         <ul>
           {!isLoggedIn && <li>
-            <Link to='/auth'>Login</Link>
+            <NavLink to='/login' activeClassName={classes.activeLink} className={classes.link}>Login</NavLink>
           </li>}
           {isLoggedIn && <li>
-            <Link to='/profile'>Profile</Link>
+            <NavLink to='/corretores' activeClassName={classes.activeLink} className={classes.link}>Corretores</NavLink>
+            </li>}
+          {isLoggedIn && <li>
+            <NavLink to='/promotores' activeClassName={classes.activeLink} className={classes.link}>Promotores</NavLink>
+            </li>}
+          {isLoggedIn && <li>
+            <NavLink to='/leads' activeClassName={classes.activeLink} className={classes.link}>Indicações</NavLink>
+            </li>}
+          {isLoggedIn && <li>
+            <NavLink to='/perfil' activeClassName={classes.activeLink} className={classes.link}>Perfil</NavLink>
           </li>}
           
           {isLoggedIn && <li>
