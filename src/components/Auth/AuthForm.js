@@ -61,6 +61,7 @@ const AuthForm = () => {
       })
       .catch((error) => {
         alert(error.message);
+        setIsLoading(false);
       });
       };
 

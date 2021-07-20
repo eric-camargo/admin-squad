@@ -1,28 +1,37 @@
-import { Switch, Route } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import Layout from './components/Layout/Layout';
 import UserProfile from './components/Profile/UserProfile';
 import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
-import Broker from './pages/Boards/Broker/Broker'
-
+import Promoters from './pages/Promoters'
+import AuthContext from './store/auth-context';
 
 function App() {
+  const authCtx = useContext(AuthContext);
+
+  const isLoggedIn = authCtx.isLoggedIn;
+
   return (
     <Layout>
       <Switch>
-        <Route path='/' exact>
-          <HomePage />
+        <Route path='/' exact> 
+          {!isLoggedIn ? 
+            <Redirect to='/login' />
+            :<HomePage />}
         </Route>
-        <Route path='/auth'>
+        {!isLoggedIn && <Route path='/login'>
           <AuthPage />
-        </Route>
-        <Route path='/profile'>
-          <UserProfile />
-        </Route>
-        <Route path='/corretor'>
-          <Broker />
-        </Route>
+        </Route>}
+        {isLoggedIn &&
+          <Route path='/perfil'>
+            <UserProfile />
+          </Route>}
+        {isLoggedIn &&
+        <Route path='/corretores'>
+          <Promoters />
+        </Route>}
       </Switch>
     </Layout>
   );
