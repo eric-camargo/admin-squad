@@ -1,9 +1,9 @@
 .background {
   width: 100%;
   height: calc(100vh - 65px);
-  background-color:white;
+  padding: 52px;
+  background-color:#fafafa;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }

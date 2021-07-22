@@ -1,12 +1,13 @@
 .header {
   width: 100%;
-  height: 4rem;
-  background-color: #003877;
+  height: 75px;
+  background-color: #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 16px 9px 16px 22px;
+  border: 1px solid #e4e4e4;
 }
 
 .logo {
@@ -30,26 +31,21 @@
 
 .header a {
   text-decoration: none;
-  color: white;
+  color: #282828;
   font-weight: bold;
 }
 
 .header button {
   font: inherit;
+  color: #282828;
+  border-style: hidden;
   background-color: transparent;
-  border: 1px solid white;
-  color: white;
   font-weight: bold;
   padding: 0.5rem 1.5rem;
   border-radius: 6px;
   cursor: pointer;
 }
 
-.header a:hover {
-  color: #c291e2;
-}
-
-.header button:hover {
-  background-color: #c291e2;
-  color: #38015c;
+.header a:hover, button:hover {
+  color: #c2c2c2;
 }

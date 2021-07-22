@@ -2,30 +2,92 @@
     --radius: 80px;
   }
   
-.card {
+/* .card {
   width: 80%;
   height: calc(90vh - 65px);
-  background-color: rgb(231, 251, 255);
-  border-radius: 14px;
-  padding: 24px;
-}
+  margin: 16px 52px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  padding: 1px 1px 1px 0;
+} */
 
 table {
-  width: 100%;
-  border-spacing: 0 0.5rem;
+  width: 80%;
+  margin: 16px 52px;
+  border-collapse: collapse;
+  background-color: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #e4e4e4;
 }
 
-thead {
-  color: #34769D;
-  font-size: 1.1rem;
+table th {
+  height: 55px;
+  padding: 20px 20px 17px 17px;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  text-align: left;
 }
 
-tbody:before {
+table td {
+  padding: 22px 17px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+th, tr {
+  color: #282828;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+th, td {
+  border-right: 1px solid #e4e4e4;
+}
+
+td:first-child {
+  display: flex;
+  align-items: center;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+.nameIcon {
+  display: flex;
+  flex-direction: row;
+  width: 34px;
+  text-align: center;
+  background-color: #0091ff;
+  border-radius: 50%;
+  padding: 8px 0;
+  margin-right: 9px;
+}
+
+.initials {
+  position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  font-weight: bold;
+  width: 34px;
+}
+
+/* tbody:before {
   /* This doesn't work because of border-collapse */
-  line-height:1em;
+  /* line-height:1em;
   content:".";
   color:white; /* bacground color */
-  display:block;
+  /* display:block;
 }
 
 tbody tr {
@@ -60,5 +122,5 @@ button {
   background-color: #014575;
   color: white;
   font-size: 12px;
-  font-weight:500;
-} 
+  font-weight:500; */
+/* }  */
