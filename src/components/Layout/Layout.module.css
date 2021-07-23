@@ -1,7 +1,7 @@
 .background {
   width: 100%;
   height: calc(100vh - 65px);
-  padding: 52px;
+  padding: calc(52px + 75px) 52px;
   background-color:#fafafa;
   display: flex;
   flex-direction: column;

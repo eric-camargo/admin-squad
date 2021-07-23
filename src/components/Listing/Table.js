@@ -12,11 +12,14 @@ export default function Table(props) {
 
   return (
     <table>
-      <tr>
-        {props.header.map((col) => (
-          <th>{col.title}</th>
-        ))}
-      </tr>
+      <thead>
+        <tr>
+          {props.header.map((col) => (
+            <th>{col.title}</th>
+          ))}
+        </tr>
+      </thead>
+      <tbody> 
       {props.data.map((row) => (
         <tr key={row.id}>
           {props.header.map((col) => (
@@ -34,6 +37,7 @@ export default function Table(props) {
           ))}
         </tr>
       ))}
+      </tbody>
     </table>
   )
 }

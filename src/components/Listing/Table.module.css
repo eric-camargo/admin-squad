@@ -1,7 +1,7 @@
 :root {
     --radius: 80px;
   }
-  
+
 /* .card {
   width: 80%;
   height: calc(90vh - 65px);
@@ -13,46 +13,59 @@
 } */
 
 table {
-  width: 80%;
-  margin: 16px 52px;
+  width: 100%;
   border-collapse: collapse;
   background-color: #fff;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  overflow: hidden;
+  overflow-y: auto;
   box-shadow: 0 0 0 1px #e4e4e4;
 }
 
-table th {
+table thead th {
   height: 55px;
   padding: 20px 20px 17px 17px;
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
   text-align: left;
+  /* position: sticky;
+  top: calc(75px + 52px); */
+  color: #282828;
+  border-right: 1px solid #e4e4e4;
+}
+
+table thead {
+  background-color: white;
+  border-bottom: 1px solid #e4e4e4;
+  /* position: sticky;
+  top: calc(75px + 52px); */
 }
 
 table td {
   padding: 22px 17px;
   text-align: left;
   font-size: 13px;
-  font-weight: 500;
+  /* font-weight: 500;
+  top: calc(75px + 52px); */
 }
 
-th, tr {
+tr {
+  border-bottom: 1px solid #eeeff4;
+}
+
+
+td {
   color: #282828;
-  border-bottom: 1px solid #e4e4e4;
-}
-
-th, td {
-  border-right: 1px solid #e4e4e4;
+  border-right: 1px solid #eeeff4;
 }
 
 td:first-child {
   display: flex;
   align-items: center;
 }
+
 
 tr:last-child {
   border-bottom:none;
@@ -83,11 +96,11 @@ th:last-child, td:last-child {
 }
 
 /* tbody:before {
-  /* This doesn't work because of border-collapse */
-  /* line-height:1em;
+  This doesn't work because of border-collapse
+  line-height:1em;
   content:".";
-  color:white; /* bacground color */
-  /* display:block;
+  color:white;
+  display:block;
 }
 
 tbody tr {
@@ -122,5 +135,5 @@ button {
   background-color: #014575;
   color: white;
   font-size: 12px;
-  font-weight:500; */
-/* }  */
+  font-weight:500;
+}  */

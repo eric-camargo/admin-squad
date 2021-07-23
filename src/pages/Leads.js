@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 
 import Table from '../components/Listing/Table'
+import SearchBar from '../components/UI/SearchBar'
 
 export default function LeadsList() {
   const header = [
@@ -56,6 +57,48 @@ export default function LeadsList() {
       phone: '1192922-4444',
       stage: 'Venda'
     },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
+      id: '3313',
+      promoter: 'Jose da Silva',
+      name: 'Johan da Silva',
+      email: 'johan@gmail.com',
+      phone: '1192922-4444',
+      stage: 'Venda'
+    },{
       id: '12311243',
       promoter: 'Jose da Silva',
       name: 'Bob Odenkirk',
@@ -67,9 +110,12 @@ export default function LeadsList() {
 const [leadsData, setPromotersData] = useState(LEADSDUMMYDATA)
 
   return (
-    <Table 
-    header={header}
-    data={leadsData}
-    />
+    <Fragment>
+      <SearchBar></SearchBar>
+      <Table 
+      header={header}
+      data={leadsData}
+      />
+    </Fragment>
   )
 }
