@@ -7,29 +7,29 @@ import Table from '../components/Listing/Table'
 export default function Promoters() {
   
   const header = [{
-      name: 'name',
-      title: 'Promotor'
+      accessor: 'name',
+      Header: 'Promotor'
     },{
-      name: 'email',
-      title: 'Email'
+      accessor: 'email',
+      Header: 'Email'
     },{
-      name: 'phone',
-      title: 'Telefone'
+      accessor: 'phone',
+      Header: 'Telefone'
     },{
-      name: 'recommendationsNum',
-      title: 'Indicações'
+      accessor: 'recommendationsNum',
+      Header: 'Indicações'
     },{
-      name: 'validationsNum',
-      title: 'Validações'
+      accessor: 'validationsNum',
+      Header: 'Validações'
     },{
-      name: 'visitsNum',
-      title: 'Visitas'
+      accessor: 'visitsNum',
+      Header: 'Visitas'
     },{
-      name: 'documentationsNum',
-      title: 'Pastas'
+      accessor: 'documentationsNum',
+      Header: 'Pastas'
     },{
-      name: 'salesNum',
-      title: 'Vendas'
+      accessor: 'salesNum',
+      Header: 'Vendas'
     }]
   
   const PROMOTERSDUMMYDATA = [{
@@ -58,7 +58,7 @@ export default function Promoters() {
 
   return (
     <Table 
-    header={header}
+    columns={header}
     data={promotersData}
     />
   )

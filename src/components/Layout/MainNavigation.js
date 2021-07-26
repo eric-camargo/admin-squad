@@ -20,9 +20,6 @@ const MainNavigation = () => {
             <NavLink to='/login' activeClassName={classes.activeLink} className={classes.link}>Login</NavLink>
           </li>}
           {isLoggedIn && <li>
-            <NavLink to='/corretores' activeClassName={classes.activeLink} className={classes.link}>Corretores</NavLink>
-            </li>}
-          {isLoggedIn && <li>
             <NavLink to='/promotores' activeClassName={classes.activeLink} className={classes.link}>Promotores</NavLink>
             </li>}
           {isLoggedIn && <li>

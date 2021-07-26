@@ -10,6 +10,7 @@
 
 input {
     border: none;
+    background-color: transparent;
 }
 
 input:focus {
