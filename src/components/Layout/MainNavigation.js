@@ -20,7 +20,7 @@ const MainNavigation = () => {
             <NavLink to='/login' activeClassName={classes.activeLink} className={classes.link}>Login</NavLink>
           </li>}
           {isLoggedIn && <li>
-            <NavLink to='/corretores' activeClassName={classes.activeLink} className={classes.link}>Corretores</NavLink>
+            <NavLink to='/corretores' activeClassName={classes.activeLink} className={classes.link}>Dashboard</NavLink>
             </li>}
           {isLoggedIn && <li>
             <NavLink to='/promotores' activeClassName={classes.activeLink} className={classes.link}>Promotores</NavLink>
@@ -28,9 +28,9 @@ const MainNavigation = () => {
           {isLoggedIn && <li>
             <NavLink to='/indicacoes' activeClassName={classes.activeLink} className={classes.link}>Indicações</NavLink>
             </li>}
-          {isLoggedIn && <li>
+          {/* {isLoggedIn && <li>
             <NavLink to='/perfil' activeClassName={classes.activeLink} className={classes.link}>Perfil</NavLink>
-          </li>}
+          </li>} */}
           
           {isLoggedIn && <li>
             <button onClick={authCtx.logout}>Logout</button>
