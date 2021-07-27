@@ -27,11 +27,7 @@ const MainNavigation = () => {
             </li>}
           {isLoggedIn && <li>
             <NavLink to='/indicacoes' activeClassName={classes.activeLink} className={classes.link}>Indicações</NavLink>
-            </li>}
-          {/* {isLoggedIn && <li>
-            <NavLink to='/perfil' activeClassName={classes.activeLink} className={classes.link}>Perfil</NavLink>
-          </li>} */}
-          
+            </li>}          
           {isLoggedIn && <li>
             <button onClick={authCtx.logout}>Logout</button>
           </li>}

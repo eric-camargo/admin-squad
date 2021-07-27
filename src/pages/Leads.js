@@ -6,24 +6,24 @@ import SearchBar from '../components/UI/SearchBar'
 export default function LeadsList() {
   const header = [
     {
-      name: 'name',
-      title: 'Indicação'
+      Header: 'Indicação',
+      accessor: 'name'
     },
     {
-      name: 'promoter',
-      title: 'Promotor'
+      Header: 'Promotor',
+      accessor: 'promoter'
     },
     {
-      name: 'email',
-      title: 'Email'
+      Header: 'Email',
+      accessor: 'email'
     },
     {
-      name: 'phone',
-      title: 'Telefone'
+      Header: 'Telefone',
+      accessor: 'phone'
     },
     {
-      name: 'stage',
-      title: 'Etapa'
+      Header: 'Etapa',
+      accessor: 'stage'
     }
   ]
 
@@ -113,7 +113,7 @@ const [leadsData, setPromotersData] = useState(LEADSDUMMYDATA)
     <Fragment>
       <SearchBar></SearchBar>
       <Table 
-      header={header}
+      columns={header}
       data={leadsData}
       />
     </Fragment>
