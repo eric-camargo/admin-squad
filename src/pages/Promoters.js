@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 import Table from '../components/Listing/Table'
-// import classes from './Promoters.module.css'
 
 
 export default function Promoters() {
