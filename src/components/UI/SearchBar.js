@@ -6,7 +6,7 @@ import searchIcon from '../assets/searchIcon.svg'
 function SearchBar(props) {
     return (
         <div className={classes.inputContainer}>
-            <img src={searchIcon} />
+            <img src={searchIcon} alt="Search Icon"/>
             <input
              placeholder="Pesquisa"
              onFocus={(e) => e.target.placeholder = ""} 

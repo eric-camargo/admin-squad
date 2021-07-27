@@ -1,7 +1,7 @@
-import StartingPageContent from '../components/StartingPage/StartingPageContent';
+import WelcomePage from '../components/StartingPage/WelcomePage';
 
 const HomePage = () => {
-  return <StartingPageContent />;
+  return <WelcomePage />;
 };
 
 export default HomePage;
