@@ -20,7 +20,7 @@ const MainNavigation = () => {
             <NavLink to='/login' activeClassName={classes.activeLink} className={classes.link}>Login</NavLink>
           </li>}
           {isLoggedIn && <li>
-            <NavLink to='/corretores' activeClassName={classes.activeLink} className={classes.link}>Dashboard</NavLink>
+            <NavLink to='/dashboard' activeClassName={classes.activeLink} className={classes.link}>Dashboard</NavLink>
             </li>}
           {isLoggedIn && <li>
             <NavLink to='/promotores' activeClassName={classes.activeLink} className={classes.link}>Promotores</NavLink>

@@ -7,6 +7,7 @@ import AuthPage from './pages/AuthPage';
 import HomePage from './pages/HomePage';
 import Promoters from './pages/Promoters';
 import Leads from './pages/Leads';
+import Dashboard from './pages/Dashboard';
 import AuthContext from './store/auth-context';
 
 function App() {
@@ -36,6 +37,10 @@ function App() {
         {isLoggedIn &&
         <Route path='/indicacoes'>
           <Leads />
+        </Route>}
+        {isLoggedIn &&
+        <Route path='/dashboard'>
+          <Dashboard />
         </Route>}
       </Switch>
     </Layout>
