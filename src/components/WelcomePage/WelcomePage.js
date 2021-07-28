@@ -1,6 +1,6 @@
-import classes from './StartingPageContent.module.css';
+import classes from './WelcomePage.module.css';
 
-const StartingPageContent = () => {
+const WelcomePage = () => {
   return (
     <section className={classes.starting}>
       <h1>Welcome on Board!</h1>
@@ -8,4 +8,4 @@ const StartingPageContent = () => {
   );
 };
 
-export default StartingPageContent;
+export default WelcomePage;

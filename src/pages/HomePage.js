@@ -1,4 +1,4 @@
-import WelcomePage from '../components/StartingPage/WelcomePage';
+import WelcomePage from '../components/WelcomePage/WelcomePage';
 
 const HomePage = () => {
   return <WelcomePage />;
